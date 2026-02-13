@@ -134,6 +134,8 @@ def display_stock_info(stock_name):
 st.set_page_config(page_title="현기 거래소")
 st.title("📈 현기거래소 v2")
 
+st.dataframe(df[["NAME", "WON", "hyungi", "kkong"]])
+
 # 탭을 사용하여 종목 분리
 tab1, tab2 = st.tabs(["😵 HYUNGI", "😻 KKONG"])
 
